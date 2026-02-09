@@ -1,0 +1,225 @@
+Муслим, [09.02.2026 19:42]
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>CARBRIDGE — ввоз автомобилей под ключ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="CARBRIDGE — международный ввоз автомобилей из Японии, Китая, Казахстана, Киргизстана и Беларуси под ключ. Москва.">
+
+<style>
+:root{
+--blue:#0b1f3a;
+--orange:#ff7a00;
+--gray:#f4f6f9;
+}
+*{box-sizing:border-box}
+body{
+margin:0;
+font-family:Arial,Helvetica,sans-serif;
+color:var(--blue);
+background:#fff;
+line-height:1.6;
+}
+header{
+background:var(--blue);
+color:#fff;
+padding:20px;
+position:sticky;
+top:0;
+z-index:10;
+}
+nav a{
+color:#fff;
+margin-right:15px;
+text-decoration:none;
+font-weight:600;
+}
+section{
+padding:80px 20px;
+max-width:1200px;
+margin:auto;
+}
+.hero{
+background:linear-gradient(135deg,#0b1f3a,#123b6d);
+color:#fff;
+text-align:center;
+padding:130px 20px;
+}
+.hero h1{font-size:44px;margin-bottom:10px}
+.hero p{font-size:18px;opacity:.9}
+.btn{
+background:var(--orange);
+color:#fff;
+padding:16px 34px;
+display:inline-block;
+border-radius:5px;
+text-decoration:none;
+font-weight:600;
+margin-top:25px;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+.card{
+background:var(--gray);
+padding:30px;
+border-radius:8px;
+}
+.dark{
+background:var(--blue);
+color:#fff;
+}
+.dark .card{background:#112b52;color:#fff}
+h2{font-size:32px;margin-bottom:30px}
+ul{padding-left:20px}
+footer{
+background:var(--blue);
+color:#fff;
+text-align:center;
+padding:50px 20px;
+}
+input,select{
+width:100%;
+padding:14px;
+margin-bottom:15px;
+font-size:15px;
+}
+button{
+width:100%;
+background:var(--orange);
+border:none;
+padding:16px;
+font-size:16px;
+color:#fff;
+font-weight:600;
+cursor:pointer;
+border-radius:4px;
+}
+#result{margin-top:15px;font-weight:bold}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<a href="#home">Главная</a>
+<a href="#directions">Направления</a>
+<a href="#services">Услуги</a>
+<a href="#customs">Таможня</a>
+<a href="#cases">Кейсы</a>
+<a href="#about">О компании</a>
+</nav>
+</header>
+
+<section id="home" class="hero">
+<h1>CARBRIDGE — ваш надёжный мост к автомобилю из-за рубежа</h1>
+<p>Международный ввоз автомобилей под ключ • Москва</p>
+<p>Япония · Китай · Казахстан · Киргизстан · Беларусь</p>
+<a href="#calculator" class="btn">Рассчитать стоимость за 2 минуты</a>
+</section>
+
+<section>
+<h2>Почему выбирают CARBRIDGE</h2>
+<div class="grid">
+<div class="card">Единый договор «под ключ». Вся ответственность на нас.</div>
+<div class="card">Фиксированная стоимость без скрытых платежей.</div>
+<div class="card">Онлайн-контроль всех этапов перевозки.</div>
+<div class="card">Эксперты по каждой стране отправки.</div>
+<div class="card">Страхование автомобиля на полную стоимость.</div>
+<div class="card">Сопровождение до ПТС и регистрации.</div>
+</div>
+</section>
+
+<section id="calculator" class="dark">
+<h2>Калькулятор доставки</h2>
+<select id="country">
+<option>Япония</option>
+<option>Китай</option>
+<option>Казахстан</option>
+<option>Киргизстан</option>
+<option>Беларусь</option>
+</select>
+<select id="type">
+<option>Легковой автомобиль</option>
+<option>Кроссовер / внедорожник</option>
+<option>Коммерческий транспорт</option>
+</select>
+<button onclick="calc()">Рассчитать</button>
+<div id="result"></div>
+</section>
+
+<section id="directions">
+<h2>Направления перевозок</h2>
+<div class="grid">
+<div class="card"><b>Япония</b><br>Аукционы, проверка, морская доставка. 35–55 дней.</div>
+<div class="card"><b>Китай</b><br>Новые авто, электромобили, ЖД и море.</div>
+<div class="card"><b>Казахстан</b><br>Быстрый автоперегон и оформление.</div>
+<div class="card"><b>Киргизстан</b><br>Оптимизация пошлин и маршрутов.</div>
+<div class="card"><b>Беларусь</b><br>Документы и контроль сделки.</div>
+</div>
+</section>
+
+<section id="services" class="dark">
+<h2>Наши услуги</h2>
+<div class="grid">
+<div class="card">Комплекс «Под ключ»</div>
+<div class="card">Поиск и проверка автомобиля</div>
+<div class="card">Международная логистика</div>
+<div class="card">Таможенное оформление</div>
+<div class="card">Автоперегон</div>
+
+Муслим, [09.02.2026 19:42]
+<div class="card">Страхование груза</div>
+</div>
+</section>
+
+<section id="customs">
+<h2>Экспертная таможня</h2>
+<ul>
+<li>Актуальные пошлины и сборы</li>
+<li>ЭРА-ГЛОНАСС и СБКТС</li>
+<li>Ввоз электромобилей</li>
+<li>Физические и юридические лица</li>
+<li>Сравнение стран ввоза</li>
+</ul>
+</section>
+
+<section id="cases" class="dark">
+<h2>Реальные кейсы</h2>
+<p>Toyota Land Cruiser 2021 — Япония → Москва — 45 дней</p>
+<p>BYD Han EV — Китай → Москва — 32 дня</p>
+<p>BMW X5 — Казахстан → Москва — 14 дней</p>
+</section>
+
+<section id="about">
+<h2>О компании CARBRIDGE</h2>
+<p>Наша миссия — сделать международный ввоз автомобилей прозрачным, безопасным и управляемым.</p>
+<p>Мы работаем из Москвы и имеем партнёрские сети в странах Азии и СНГ.</p>
+</section>
+
+<footer>
+© CARBRIDGE, Москва · Международные перевозки автомобилей
+</footer>
+
+<script>
+function calc(){
+let c=document.getElementById("country").value;
+let price={
+"Япония":400000,
+"Китай":350000,
+"Казахстан":250000,
+"Киргизстан":230000,
+"Беларусь":200000
+};
+document.getElementById("result").innerText=
+"Ориентировочная стоимость услуг: "+
+price[c].toLocaleString()+" ₽";
+}
+</script>
+
+</body>
+</html>
